@@ -18,12 +18,13 @@ while chances > 0:
         chances -= 1
         print(f"Your Guess Was Too High\n ChancesLeft: {chances}")
     
-    if chances < 3:
+    if chances == 3:
         print("Hint:")
         if preSetNum >= 5:
             print("The Number is Atleast 5")
         else:
             print("The Number is Less Than 5")
+
             
 if chances == 0:
     print(f"You Lose\n The Number Was: {preSetNum}")
